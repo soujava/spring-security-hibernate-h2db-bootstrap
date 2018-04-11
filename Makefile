@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-default: run
+default: start
 
 install:
 	chmod +x ./scripts/permissions.sh
@@ -26,4 +26,4 @@ stop:
 	./tomcat/apache-tomcat-8.5.30/bin/catalina.sh stop
 
 
-.PHONY: start, stop, killall, status, log
+.PHONY: start, stop, browser, status, log
